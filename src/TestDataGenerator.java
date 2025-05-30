@@ -1,10 +1,11 @@
+import java.security.SecureRandom;
 import java.util.*;
 
 class TestDataGenerator {
     public String makeText(int wordCount) {
         String[] words = {"програма", "алгоритм", "тест", "швидкість", "код",
                 "студент", "університет", "завдання", "проект", "результат"};
-        Random r = new Random();
+        Random r = new SecureRandom();
         StringBuilder text = new StringBuilder();
 
         for (int i = 0; i < wordCount; i++) {
